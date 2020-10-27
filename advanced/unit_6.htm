@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 18 Oct 2020 18:53:22 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<style>
+.question-container{max-width:1024px;background:orange;margin:0 auto;border-radius:8px;width:100%;font-size:30px}.question-container .inner-container{padding:30px}.question-container .question_number{color:#000;text-align:center}.question-container .question_name{margin-top:30px}.question-container .options{margin-top:30px}.question-container .option{margin-bottom:3px;background:#FFF;padding:10px;border-radius:3px}.question-container .enabled .option{cursor:pointer}.question-container .enabled .option:hover{background:#25a186;color:#FFF}.question-container .disabled .correct .right{color:green;animation:correctAnim 0.5s 0s 2 both;animation-direction:alternate;transform:scale(2)}.question-container .option span{display:none;float:right}.question-container .disabled .correct .right,.question-container .disabled .incorrect .wrong{display:inline-block}@keyframes correctAnim{0%{color:green;transform:scale(2)}100%{color:green;transform:scale(5)}}.question-container .disabled .incorrect .wrong{color:red;transform:scale(1.5)}.question-container input[type='button']{background:#25a186;color:#FFF;cursor:pointer;padding:10px 40px;margin:20px;border:0;font-size:20px;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}.question-container input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}.question-container .next input[type='button']{margin-top:30px}.question-container .enabled .next input[type='button']{background:gray;color:#d5d5d5;-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1);cursor:default}.question-container .disabled .next input[type='button']{background:#25a186;color:#FFF;cursor:pointer;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);animation:enableBtnAnim 0.5s 0s infinite both;animation-direction:alternate}@keyframes enableBtnAnim{0%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}100%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}}.question-container .disabled .next input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);animation:hoverBtnAnim 0.5s 0s 1 both;animation-direction:alternate}@keyframes hoverBtnAnim{0%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}100%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}}.question-container .showAll{margin-bottom:40px;border:1px solid gray;padding:25px;border-radius:4px;display:block!important}@media only screen and (max-width : 600px){.question-container .next input[type='button']{width:100%;margin:0;margin-top:20px}}</style>
+<div id='quiz_container'></div>
+<script>
+
+var _0x30e8=['INPUT','setAttribute','inner-container','createElement','\x20correct','90%','style','question\x20disabled\x20showAll','option\x20option','call','center','getElementById','question\x20disabled','questionContainer','nextBtn','\x20of\x20','srcElement','</div><br/><div>','className','question\x20enabled','<div><div><b>Result:</b></div><br/><div>','   \     \    \     \        \      \    \     \ <a\ target=\'_blank\'\ href=\'https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\'>\     \          </a>','object','remove','parentElement','Show\x20Answers','indexOf','div','showAnswersBtn','hasOwnProperty','lastChild','right','getElementsByClassName','question_name','score','enabled','Quiz','<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>','showResetBtn','next','quiz-report','options','myLink','currentQuestion','value','question','bind','Try\x20Again','button','event','option','appendChild','target','elementId','none','textAlign','addEventListener','quizQuestions','innerHTML','block','innerContainer','question_number','length','display','type','click'];(function(_0x286d19,_0x30e82a){var _0x9e26e6=function(_0x15fa70){while(--_0x15fa70){_0x286d19['push'](_0x286d19['shift']());}};_0x9e26e6(++_0x30e82a);}(_0x30e8,0x10d));var _0x9e26=function(_0x286d19,_0x30e82a){_0x286d19=_0x286d19-0x0;var _0x9e26e6=_0x30e8[_0x286d19];return _0x9e26e6;};(function(){function _0x199599(){var _0x3b4b83=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this['questionContainer']=document['createElement'](_0x9e26('0x16')),this['questionContainer'][_0x9e26('0xd')]='question-container',this[_0x9e26('0x37')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x37')][_0x9e26('0xd')]=_0x9e26('0x3f'),_0x3b4b83['appendChild'](this[_0x9e26('0x8')]),this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);for(var _0x535939=0x0;_0x535939<this[_0x9e26('0x24')][_0x9e26('0x34')]['length'];_0x535939++){var _0x3dd27d=document['createElement']('div');_0x3dd27d[_0x9e26('0xd')]=_0x9e26('0xe'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d),_0x535939!=this[_0x9e26('0x26')]&&(_0x3dd27d['style'][_0x9e26('0x3a')]=_0x9e26('0x31'));var _0x81142=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x81142[_0x9e26('0xd')]=_0x9e26('0x38'),_0x81142[_0x9e26('0x35')]=_0x535939+0x1+'/'+this['options'][_0x9e26('0x34')][_0x9e26('0x39')],_0x3dd27d[_0x9e26('0x2e')](_0x81142);var _0x13c728=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x13c728['className']=_0x9e26('0x1c'),_0x13c728['innerHTML']=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x28')],_0x3dd27d[_0x9e26('0x2e')](_0x13c728);var _0x4722a4=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4722a4[_0x9e26('0xd')]=_0x9e26('0x24'),_0x3dd27d[_0x9e26('0x2e')](_0x4722a4);for(var _0x28c409=0x0;_0x28c409<this['options']['quizQuestions'][_0x535939]['options'][_0x9e26('0x39')];_0x28c409++){var _0x4cca80=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4cca80[_0x9e26('0xd')]='option\x20option'+_0x535939+_0x28c409,_0x4cca80[_0x9e26('0x35')]=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][_0x28c409][_0x9e26('0x27')]+_0x9e26('0x20'),_0x4722a4[_0x9e26('0x2e')](_0x4cca80),_0x4cca80[_0x9e26('0x33')]('click',_0x14c511['bind'](this,_0x535939,_0x28c409));}var _0x4ca056=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4ca056[_0x9e26('0xd')]=_0x9e26('0x22');var _0x4cc6a7=document[_0x9e26('0x40')]('INPUT');_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x27'),'Next'),_0x4cc6a7[_0x9e26('0xd')]=_0x9e26('0x9'),_0x4ca056[_0x9e26('0x2e')](_0x4cc6a7),_0x3dd27d[_0x9e26('0x2e')](_0x4ca056),_0x4cc6a7[_0x9e26('0x33')](_0x9e26('0x3c'),_0x55841d[_0x9e26('0x29')](this));}var _0x4b290c=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4b290c['id']=_0x9e26('0x23'),_0x4b290c['style'][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c),function(){var _0x4244cc=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this[_0x9e26('0x25')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x25')]['style']['fontSize']=_0x9e26('0x0'),this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x25')][_0x9e26('0x35')]=_0x9e26('0x10'),_0x4244cc[_0x9e26('0x2e')](this[_0x9e26('0x25')]);}[_0x9e26('0x4')](this),function(){var _0x22373e=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]<=0xbe&&0xb4<=_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]||_0x22373e[_0x9e26('0x12')]();}[_0x9e26('0x4')](this);}function _0x14c511(_0x364928,_0x1925ff){var _0x1c0550=_0x1c0550||window[_0x9e26('0x2c')];if(-0x1!=(_0x1c0550[_0x9e26('0x2f')]||_0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26('0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))){for(var _0x13e903=document['getElementsByClassName'](_0x9e26('0x28')),_0x17a407=0x0;_0x17a407<_0x13e903[_0x9e26('0x39')];_0x17a407++)_0x17a407==_0x364928&&(_0x13e903[_0x364928][_0x9e26('0xd')]=_0x9e26('0x7'));for(_0x17a407=0x0;_0x17a407<this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x9e26('0x39')];_0x17a407++){if(_0x17a407==_0x1925ff)if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26('0x1a')])(_0x13e903=document['getElementsByClassName']('option'+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+_0x9e26('0x41'),this[_0x9e26('0x1d')]++;else(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+'\x20incorrect';else if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][_0x9e26('0x1a')])(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x17a407))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x17a407+_0x9e26('0x41');}}}function _0x55841d(){var _0x44e42a=_0x44e42a||window[_0x9e26('0x2c')];if(-0x1!=(_0x44e42a[_0x9e26('0x2f')]||_0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26('0x13')]['className']['indexOf']('disabled')){this[_0x9e26('0x26')]++;for(var _0x4023e4=document['getElementsByClassName'](_0x9e26('0x28')),_0x3c6c2a=0x0;_0x3c6c2a<_0x4023e4[_0x9e26('0x39')];_0x3c6c2a++)_0x3c6c2a==this['currentQuestion']?_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'):_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]='none';this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')]==this[_0x9e26('0x26')]&&function(){var _0x522412=document[_0x9e26('0x6')](_0x9e26('0x23'));if(_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'),_0x522412[_0x9e26('0x35')]=_0x9e26('0xf')+this[_0x9e26('0x1d')]+_0x9e26('0xa')+this['options'][_0x9e26('0x34')][_0x9e26('0x39')]+_0x9e26('0xc')+parseInt(this[_0x9e26('0x1d')]/this['options'][_0x9e26('0x34')][_0x9e26('0x39')]*0x64)+'%</div></div>',this[_0x9e26('0x24')][_0x9e26('0x17')]){var _0x2ea20c=document[_0x9e26('0x40')]('INPUT');_0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2ea20c[_0x9e26('0x3e')]('value',_0x9e26('0x14')),_0x522412[_0x9e26('0x2e')](_0x2ea20c),_0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'),function(){for(var _0x3afb67=document[_0x9e26('0x1b')]('question'),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0xd')]=_0x9e26('0x2');for(_0x3afb67=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31');}['bind'](this));}if(this[_0x9e26('0x24')][_0x9e26('0x21')]){var _0x2fbad3=document[_0x9e26('0x40')](_0x9e26('0x3d'));_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x27'),_0x9e26('0x2a')),_0x522412['appendChild'](_0x2fbad3),_0x2fbad3[_0x9e26('0x33')]('click',function(){for(var _0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x28')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a['length'];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0xd')]=_0x9e26('0xe'),_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]='none',0x0==_0x345f4a&&(_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display']=_0x9e26('0x36'));for(_0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a[_0x9e26('0x39')];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36');this[_0x9e26('0x26')]=0x0,this[_0x9e26('0x1d')]=0x0,document[_0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31'),document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')]='',_0x199599[_0x9e26('0x4')](this);}[_0x9e26('0x29')](this));}}[_0x9e26('0x4')](this);}}this[_0x9e26('0x1f')]=function(){this['score']=0x0;arguments[this['currentQuestion']=0x0]&&_0x9e26('0x11')==typeof arguments[0x0]&&(this[_0x9e26('0x24')]=function(_0x427faf,_0x1c6308){var _0x3daaf6;for(_0x3daaf6 in _0x1c6308)_0x1c6308[_0x9e26('0x18')](_0x3daaf6)&&(_0x427faf[_0x3daaf6]=_0x1c6308[_0x3daaf6]);return _0x427faf;}({'quizQuestions':{},'elementId':'','showAnswersBtn':!0x0,'showTimer':!0x0},arguments[0x0])),_0x199599[_0x9e26('0x4')](this);};}());
+
+
+var data = 
+
+
+[
+
+
+
+
+
+
+
+{"type":"radio","question":"My grandfather was ______ and refused to fight during the war.",
+"options":[
+{"value":"a terrorist","right":false,"selected":false},
+{"value":"an assassin","right":false,"selected":false},
+{"value":"a pacifist","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The first thing she did when she got home ______ check her emails.",
+"options":[
+{"value":"is","right":false,"selected":false},
+{"value":"did","right":false,"selected":false},
+{"value":"was","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"'He says he’s moving to Alaska.’ ‘I know! ______ would he want to live there?’",
+"options":[
+{"value":"Why on earth","right":true,"selected":false},
+{"value":"How on earth","right":false,"selected":false},
+{"value":"What on earth","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"Rarely ______ such a shining example of courage. I was astounded at his bravery.",
+"options":[
+{"value":"had I seen","right":true,"selected":false},
+{"value":"I had seen","right":false,"selected":false},
+{"value":"seen I had","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The planned ______ of the station will create space for a new shopping centre.",
+"options":[
+{"value":"demolition","right":true,"selected":false},
+{"value":"attack","right":false,"selected":false},
+{"value":"destruction","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"There was a five-car ______ on the motorway. One person was killed and several injured.",
+"options":[
+{"value":"downpour","right":false,"selected":false},
+{"value":"spin-off","right":false,"selected":false},
+{"value":"pile-up","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"What beautiful flowers! Thank you. ______ much did they cost you?",
+"options":[
+{"value":"However","right":true,"selected":false},
+{"value":"Whatever","right":false,"selected":false},
+{"value":"Whoever","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"______ who wrote the article that received so much praise in the press.",
+"options":[
+{"value":"Tina was it","right":false,"selected":false},
+{"value":"It was Tina","right":true,"selected":false},
+{"value":"Tina was","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"He was admitted into hospital as an ______.",
+"options":[
+{"value":"underground","right":false,"selected":false},
+{"value":"overall","right":false,"selected":false},
+{"value":"out-patient","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"'You don’t even want to go, do you?’ ‘How can you say that? I ______ want to go.’",
+"options":[
+{"value":"did","right":false,"selected":false},
+{"value":"am","right":false,"selected":false},
+{"value":"do","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"______ could she speak five languages, but she was also an expert in Russian poetry.",
+"options":[
+{"value":"In no way","right":false,"selected":false},
+{"value":"Not only","right":true,"selected":false},
+{"value":"On no account","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The ______ of Britain by the Romans forever changed the history of these islands.",
+"options":[
+{"value":"conquest","right":true,"selected":false},
+{"value":"revolt","right":false,"selected":false},
+{"value":"threat","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"'I don’t know why you don’t like him.’ ‘I ______ like him. When have I ever said otherwise?’",
+"options":[
+{"value":"do","right":true,"selected":false},
+{"value":"did","right":false,"selected":false},
+{"value":"am","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"Nowhere in America ______ a more beautiful scene than New England in the fall.",
+"options":[
+{"value":"you will find","right":false,"selected":false},
+{"value":"will you find","right":true,"selected":false},
+{"value":"find you will","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The meeting had a successful ______. They agreed to renew my contract.",
+"options":[
+{"value":"hangover","right":false,"selected":false},
+{"value":"offspring","right":false,"selected":false},
+{"value":"outcome","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"See that restaurant over there? That was ______ your father proposed to me.",
+"options":[
+{"value":"what","right":false,"selected":false},
+{"value":"who","right":false,"selected":false},
+{"value":"where","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"'Why didn’t you call me?’ ‘I ______ call. I left a message. Didn’t you get it.’",
+"options":[
+{"value":"did","right":true,"selected":false},
+{"value":"had","right":false,"selected":false},
+{"value":"was","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"When you use the machine, ______ you do, don’t press this button. It sets off the alarm.",
+"options":[
+{"value":"whichever","right":false,"selected":false},
+{"value":"wherever","right":false,"selected":false},
+{"value":"whatever","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"Little ______ that he had planted a bomb in the cellar beneath their feet.",
+"options":[
+{"value":"anyone realized","right":false,"selected":false},
+{"value":"anyone did realize","right":false,"selected":false},
+{"value":"did anyone realize","right":true,"selected":false},
+],"selected":""},
+
+
+
+
+
+{"type":"radio","question":"Can ______ took my mug please return it to me? And get their own!",
+"options":[
+{"value":"whoever","right":true,"selected":false},
+{"value":"however","right":false,"selected":false},
+{"value":"whatever","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"Private Jones was badly ______ during the fighting and taken to a military hospital.",
+"options":[
+{"value":"demolished","right":false,"selected":false},
+{"value":"wounded","right":true,"selected":false},
+{"value":"assassinated","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The thing ______ the risk of infection from physical contact with the patient.",
+"options":[
+{"value":"you need to be aware of does","right":false,"selected":false},
+{"value":"is you need to be aware of","right":false,"selected":false},
+{"value":"you need to be aware of is","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"What ______ his attitude not his lack of ability.",
+"options":[
+{"value":"is I object to","right":false,"selected":false},
+{"value":"I object to is","right":true,"selected":false},
+{"value":"I is object to","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"The latest findings mark a significant ______ in the search for a cure for AIDS.",
+"options":[
+{"value":"outbreak","right":false,"selected":false},
+{"value":"breakthrough","right":true,"selected":false},
+{"value":"fallout","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"______ I’m in Paris, I always come to this cafй. The coffee here’s great.",
+"options":[
+{"value":"However","right":false,"selected":false},
+{"value":"Whenever","right":true,"selected":false},
+{"value":"Whatever","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"We had to run for cover when there was a sudden ______. The rain was so heavy!",
+"options":[
+{"value":"fallout","right":false,"selected":false},
+{"value":"downpour","right":true,"selected":false},
+{"value":"overall","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"At no time ______ ever informed of the possibility that this money would be stolen.",
+"options":[
+{"value":"was my client","right":true,"selected":false},
+{"value":"my client was","right":false,"selected":false},
+{"value":"did my client","right":false,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"Remember, ______ you go and whatever you do, your family will always be here for you.",
+"options":[
+{"value":"however","right":false,"selected":false},
+{"value":"whoever","right":false,"selected":false},
+{"value":"wherever","right":true,"selected":false},
+],"selected":""},
+
+
+{"type":"radio","question":"No sooner ______ of the station than the children began to argue.",
+"options":[
+{"value":"pulled out the train had","right":false,"selected":false},
+{"value":"the train had pulled out","right":false,"selected":false},
+{"value":"had the train pulled out","right":true,"selected":false},
+],"selected":""},
+
+
+
+
+
+
+
+
+
+];
+
+
+
+var quiz = new Quiz({		quizQuestions: data,elementId: 'quiz_container',showAnswersBtn:true,showResetBtn:true});
+</script>
+  </body>
+</html>
