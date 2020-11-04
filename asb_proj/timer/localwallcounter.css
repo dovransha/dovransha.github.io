@@ -1,0 +1,87 @@
+.wallcounter{
+  overflow: hidden;
+  background: black;
+  color: white;
+  padding: 80px;
+  padding-top: 70px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.fields{
+  display: flex;
+  flex: 1;
+  margin-right: 10px;
+  position: relative; /* To position :after psuedo element */
+  justify-content: center;
+  align-items: center;
+}
+
+.fields:last-of-type{
+  margin-right: 0;
+}
+
+.fields > div{
+  flex: 1;
+  text-align: center;
+  margin-right: 1px;
+  background: red;
+  font: bold 78px Arial;
+  font: bold 10vw Arial;
+}
+
+.fields:after{ /* psuedo element */
+  position: absolute;
+  content: 'Days';
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  top: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fields:nth-of-type(2):after{
+  content: 'Hours'
+}
+
+.fields:nth-of-type(3):after{
+  content: 'Minutes'
+}
+
+.fields:nth-of-type(4):after{
+  content: 'Secsonds'
+}
+
+
+@media screen and (max-width:580px){
+
+	.wallcounter{
+	  padding: 35px;
+	  padding-top: 15px;
+	}
+
+
+	.fields:nth-of-type(1):after{
+	  content: 'Day'
+	}
+	  
+	.fields:nth-of-type(2):after{
+	  content: 'Hr'
+	}
+	
+	.fields:nth-of-type(3):after{
+	  content: 'Min'
+	}
+	
+	.fields:nth-of-type(4):after{
+	  content: 'Sec'
+	}
+}
