@@ -1,9 +1,17 @@
 .u-section-1 .u-sheet-1 {min-height: 98px}
-.u-section-1 .u-custom-html-1 {height: auto; min-height: 90px; margin: -100px 0 8px} 
+.u-section-1 .u-custom-html-1 {min-height: 90px; margin: -100px 0 8px} 
 
-@media (max-width: 1199px){ .u-section-1 .u-custom-html-1 {margin-right: initial; margin-left: initial} }
+@media (max-width: 1199px){ .u-section-1 .u-custom-html-1 {height: auto; margin-right: initial; margin-left: initial} }
 
 @media (max-width: 991px){ .u-section-1 .u-custom-html-1 {margin-top: 20px; margin-right: initial; margin-left: initial} }
 
 @media (max-width: 767px){ .u-section-1 .u-sheet-1 {min-height: 120px}
-.u-section-1 .u-custom-html-1 {margin-top: 8px; margin-bottom: 22px; margin-right: initial; margin-left: initial} }
+.u-section-1 .u-custom-html-1 {margin-top: 8px; margin-bottom: 22px; margin-right: initial; margin-left: initial} }.u-section-2 {background-image: none}
+.u-section-2 .u-sheet-1 {min-height: 438px}
+.u-section-2 .u-btn-1 {font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; align-self: center; margin: 44px auto 0}
+.u-section-2 .u-btn-2 {font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; align-self: center; margin: 30px auto 0}
+.u-section-2 .u-btn-3 {font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; align-self: center; margin: 30px auto 0}
+.u-section-2 .u-btn-4 {font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; align-self: center; margin: 30px auto 0}
+.u-section-2 .u-btn-5 {font-weight: 700; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; background-image: none; margin: 30px auto 44px} 
+
+@media (max-width: 1199px){ .u-section-2 .u-btn-1 {border-style: solid} }
