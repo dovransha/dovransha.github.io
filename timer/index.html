@@ -82,7 +82,7 @@ christmascountdown.oncountdown = function(ms){
 	}
 	else{
 		var timeleft = cdtime.formatDuration(ms, "days") // format time using formatDuration(timeleftms, "baseunit") function
-		christmascontainer.innerHTML = "<span class='lcdstyle'>" + timeleft.days + " <sup>g&uuml;n</sup> " + timeleft.hours + " <sup>sagat</sup> " + timeleft.minutes + " <sup>minut</sup> " + timeleft.seconds + " <sup>sekunt</sup></span> galdy"
+		christmascontainer.innerHTML = "galdy<span class='lcdstyle'>" + timeleft.days + " <sup>g&uuml;n</sup> " + timeleft.hours + " <sup>sagat</sup> " + timeleft.minutes + " <sup>minut</sup> " + timeleft.seconds + " <sup>sekunt</sup></span> "
 	}
 }
 christmascountdown.start() </script>
