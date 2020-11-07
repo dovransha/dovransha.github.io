@@ -257,7 +257,7 @@ if (navigator.appName.indexOf("Netscape") >= 0) {
         value="1" type="hidden"> <input name="score_details" value="" type="hidden">
       <div class="spacer">&nbsp;</div>
       <div class="default">
-        <div style="margin-left:1em"></div>
+        <div style="margin-left:1em"><b>Bize ?azy?</b></div>
         <div style="margin-left:1em"><b><br>
           </b></div>
         <div style="margin-left:1em"><b>Kimden :</b></div>
