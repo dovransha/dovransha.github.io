@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 18 Oct 2020 18:53:22 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<style>
+.question-container{max-width:1024px;background:orange;margin:0 auto;border-radius:8px;width:100%;font-size:30px}.question-container .inner-container{padding:30px}.question-container .question_number{color:#000;text-align:center}.question-container .question_name{margin-top:30px}.question-container .options{margin-top:30px}.question-container .option{margin-bottom:3px;background:#FFF;padding:10px;border-radius:3px}.question-container .enabled .option{cursor:pointer}.question-container .enabled .option:hover{background:#25a186;color:#FFF}.question-container .disabled .correct .right{color:green;animation:correctAnim 0.5s 0s 2 both;animation-direction:alternate;transform:scale(2)}.question-container .option span{display:none;float:right}.question-container .disabled .correct .right,.question-container .disabled .incorrect .wrong{display:inline-block}@keyframes correctAnim{0%{color:green;transform:scale(2)}100%{color:green;transform:scale(5)}}.question-container .disabled .incorrect .wrong{color:red;transform:scale(1.5)}.question-container input[type='button']{background:#25a186;color:#FFF;cursor:pointer;padding:10px 40px;margin:20px;border:0;font-size:20px;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}.question-container input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}.question-container .next input[type='button']{margin-top:30px}.question-container .enabled .next input[type='button']{background:gray;color:#d5d5d5;-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1);cursor:default}.question-container .disabled .next input[type='button']{background:#25a186;color:#FFF;cursor:pointer;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);animation:enableBtnAnim 0.5s 0s infinite both;animation-direction:alternate}@keyframes enableBtnAnim{0%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}100%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}}.question-container .disabled .next input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);animation:hoverBtnAnim 0.5s 0s 1 both;animation-direction:alternate}@keyframes hoverBtnAnim{0%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}100%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}}.question-container .showAll{margin-bottom:40px;border:1px solid gray;padding:25px;border-radius:4px;display:block!important}@media only screen and (max-width : 600px){.question-container .next input[type='button']{width:100%;margin:0;margin-top:20px}}</style>
+<div id='quiz_container'></div>
+<script>
+
+var _0x30e8=['INPUT','setAttribute','inner-container','createElement','\x20correct','90%','style','question\x20disabled\x20showAll','option\x20option','call','center','getElementById','question\x20disabled','questionContainer','nextBtn','\x20of\x20','srcElement','</div><br/><div>','className','question\x20enabled','<div><div><b>Result:</b></div><br/><div>','   \     \    \     \        \      \    \     \ <a\ target=\'_blank\'\ href=\'https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\'>\     \          </a>','object','remove','parentElement','Show\x20Answers','indexOf','div','showAnswersBtn','hasOwnProperty','lastChild','right','getElementsByClassName','question_name','score','enabled','Quiz','<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>','showResetBtn','next','quiz-report','options','myLink','currentQuestion','value','question','bind','Try\x20Again','button','event','option','appendChild','target','elementId','none','textAlign','addEventListener','quizQuestions','innerHTML','block','innerContainer','question_number','length','display','type','click'];(function(_0x286d19,_0x30e82a){var _0x9e26e6=function(_0x15fa70){while(--_0x15fa70){_0x286d19['push'](_0x286d19['shift']());}};_0x9e26e6(++_0x30e82a);}(_0x30e8,0x10d));var _0x9e26=function(_0x286d19,_0x30e82a){_0x286d19=_0x286d19-0x0;var _0x9e26e6=_0x30e8[_0x286d19];return _0x9e26e6;};(function(){function _0x199599(){var _0x3b4b83=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this['questionContainer']=document['createElement'](_0x9e26('0x16')),this['questionContainer'][_0x9e26('0xd')]='question-container',this[_0x9e26('0x37')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x37')][_0x9e26('0xd')]=_0x9e26('0x3f'),_0x3b4b83['appendChild'](this[_0x9e26('0x8')]),this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);for(var _0x535939=0x0;_0x535939<this[_0x9e26('0x24')][_0x9e26('0x34')]['length'];_0x535939++){var _0x3dd27d=document['createElement']('div');_0x3dd27d[_0x9e26('0xd')]=_0x9e26('0xe'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d),_0x535939!=this[_0x9e26('0x26')]&&(_0x3dd27d['style'][_0x9e26('0x3a')]=_0x9e26('0x31'));var _0x81142=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x81142[_0x9e26('0xd')]=_0x9e26('0x38'),_0x81142[_0x9e26('0x35')]=_0x535939+0x1+'/'+this['options'][_0x9e26('0x34')][_0x9e26('0x39')],_0x3dd27d[_0x9e26('0x2e')](_0x81142);var _0x13c728=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x13c728['className']=_0x9e26('0x1c'),_0x13c728['innerHTML']=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x28')],_0x3dd27d[_0x9e26('0x2e')](_0x13c728);var _0x4722a4=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4722a4[_0x9e26('0xd')]=_0x9e26('0x24'),_0x3dd27d[_0x9e26('0x2e')](_0x4722a4);for(var _0x28c409=0x0;_0x28c409<this['options']['quizQuestions'][_0x535939]['options'][_0x9e26('0x39')];_0x28c409++){var _0x4cca80=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4cca80[_0x9e26('0xd')]='option\x20option'+_0x535939+_0x28c409,_0x4cca80[_0x9e26('0x35')]=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][_0x28c409][_0x9e26('0x27')]+_0x9e26('0x20'),_0x4722a4[_0x9e26('0x2e')](_0x4cca80),_0x4cca80[_0x9e26('0x33')]('click',_0x14c511['bind'](this,_0x535939,_0x28c409));}var _0x4ca056=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4ca056[_0x9e26('0xd')]=_0x9e26('0x22');var _0x4cc6a7=document[_0x9e26('0x40')]('INPUT');_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x27'),'Next'),_0x4cc6a7[_0x9e26('0xd')]=_0x9e26('0x9'),_0x4ca056[_0x9e26('0x2e')](_0x4cc6a7),_0x3dd27d[_0x9e26('0x2e')](_0x4ca056),_0x4cc6a7[_0x9e26('0x33')](_0x9e26('0x3c'),_0x55841d[_0x9e26('0x29')](this));}var _0x4b290c=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4b290c['id']=_0x9e26('0x23'),_0x4b290c['style'][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c),function(){var _0x4244cc=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this[_0x9e26('0x25')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x25')]['style']['fontSize']=_0x9e26('0x0'),this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x25')][_0x9e26('0x35')]=_0x9e26('0x10'),_0x4244cc[_0x9e26('0x2e')](this[_0x9e26('0x25')]);}[_0x9e26('0x4')](this),function(){var _0x22373e=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]<=0xbe&&0xb4<=_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]||_0x22373e[_0x9e26('0x12')]();}[_0x9e26('0x4')](this);}function _0x14c511(_0x364928,_0x1925ff){var _0x1c0550=_0x1c0550||window[_0x9e26('0x2c')];if(-0x1!=(_0x1c0550[_0x9e26('0x2f')]||_0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26('0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))){for(var _0x13e903=document['getElementsByClassName'](_0x9e26('0x28')),_0x17a407=0x0;_0x17a407<_0x13e903[_0x9e26('0x39')];_0x17a407++)_0x17a407==_0x364928&&(_0x13e903[_0x364928][_0x9e26('0xd')]=_0x9e26('0x7'));for(_0x17a407=0x0;_0x17a407<this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x9e26('0x39')];_0x17a407++){if(_0x17a407==_0x1925ff)if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26('0x1a')])(_0x13e903=document['getElementsByClassName']('option'+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+_0x9e26('0x41'),this[_0x9e26('0x1d')]++;else(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+'\x20incorrect';else if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][_0x9e26('0x1a')])(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x17a407))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x17a407+_0x9e26('0x41');}}}function _0x55841d(){var _0x44e42a=_0x44e42a||window[_0x9e26('0x2c')];if(-0x1!=(_0x44e42a[_0x9e26('0x2f')]||_0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26('0x13')]['className']['indexOf']('disabled')){this[_0x9e26('0x26')]++;for(var _0x4023e4=document['getElementsByClassName'](_0x9e26('0x28')),_0x3c6c2a=0x0;_0x3c6c2a<_0x4023e4[_0x9e26('0x39')];_0x3c6c2a++)_0x3c6c2a==this['currentQuestion']?_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'):_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]='none';this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')]==this[_0x9e26('0x26')]&&function(){var _0x522412=document[_0x9e26('0x6')](_0x9e26('0x23'));if(_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'),_0x522412[_0x9e26('0x35')]=_0x9e26('0xf')+this[_0x9e26('0x1d')]+_0x9e26('0xa')+this['options'][_0x9e26('0x34')][_0x9e26('0x39')]+_0x9e26('0xc')+parseInt(this[_0x9e26('0x1d')]/this['options'][_0x9e26('0x34')][_0x9e26('0x39')]*0x64)+'%</div></div>',this[_0x9e26('0x24')][_0x9e26('0x17')]){var _0x2ea20c=document[_0x9e26('0x40')]('INPUT');_0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2ea20c[_0x9e26('0x3e')]('value',_0x9e26('0x14')),_0x522412[_0x9e26('0x2e')](_0x2ea20c),_0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'),function(){for(var _0x3afb67=document[_0x9e26('0x1b')]('question'),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0xd')]=_0x9e26('0x2');for(_0x3afb67=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31');}['bind'](this));}if(this[_0x9e26('0x24')][_0x9e26('0x21')]){var _0x2fbad3=document[_0x9e26('0x40')](_0x9e26('0x3d'));_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x27'),_0x9e26('0x2a')),_0x522412['appendChild'](_0x2fbad3),_0x2fbad3[_0x9e26('0x33')]('click',function(){for(var _0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x28')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a['length'];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0xd')]=_0x9e26('0xe'),_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]='none',0x0==_0x345f4a&&(_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display']=_0x9e26('0x36'));for(_0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a[_0x9e26('0x39')];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36');this[_0x9e26('0x26')]=0x0,this[_0x9e26('0x1d')]=0x0,document[_0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31'),document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')]='',_0x199599[_0x9e26('0x4')](this);}[_0x9e26('0x29')](this));}}[_0x9e26('0x4')](this);}}this[_0x9e26('0x1f')]=function(){this['score']=0x0;arguments[this['currentQuestion']=0x0]&&_0x9e26('0x11')==typeof arguments[0x0]&&(this[_0x9e26('0x24')]=function(_0x427faf,_0x1c6308){var _0x3daaf6;for(_0x3daaf6 in _0x1c6308)_0x1c6308[_0x9e26('0x18')](_0x3daaf6)&&(_0x427faf[_0x3daaf6]=_0x1c6308[_0x3daaf6]);return _0x427faf;}({'quizQuestions':{},'elementId':'','showAnswersBtn':!0x0,'showTimer':!0x0},arguments[0x0])),_0x199599[_0x9e26('0x4')](this);};}());
+
+
+var data = 
+
+
+[
+
+
+
+
+	
+	
+		
+			{"type":"radio","question":"'What sort of clothes ______ at your factory?' 'Tights and socks.'",
+			"options":[
+				{"value":"be made","right":false,"selected":false},
+				{"value":"are made","right":true,"selected":false},
+				{"value":"make","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"I hope we see a ______ station soon. The tank is almost empty.",
+			"options":[
+				{"value":"bus","right":false,"selected":false},
+				{"value":"petrol","right":true,"selected":false},
+				{"value":"railway","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Where will the next Olympics ______?' 'I'm not sure. Check on the Internet.'",
+			"options":[
+				{"value":"hold","right":false,"selected":false},
+				{"value":"be held","right":true,"selected":false},
+				{"value":"held","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"It's so bright, I can't see a thing. Pass me my ______, please.",
+			"options":[
+				{"value":"sunglasses","right":true,"selected":false},
+				{"value":"suncream","right":false,"selected":false},
+				{"value":"sunset","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"Your books need to go back to the ______ today. Shall I take them back?",
+			"options":[
+				{"value":"bookshop","right":false,"selected":false},
+				{"value":"library","right":true,"selected":false},
+				{"value":"newsagent's","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Who ______ the iPod?' 'Jonathan Ive, the head of design at Apple.'",
+			"options":[
+				{"value":"invented","right":true,"selected":false},
+				{"value":"did invented","right":false,"selected":false},
+				{"value":"was invented","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"They love trying new dishes. Why not get them ______?",
+			"options":[
+				{"value":"a notebook","right":false,"selected":false},
+				{"value":"an address book","right":false,"selected":false},
+				{"value":"a cookbook","right":true,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"The police are making progress with the robbery but no one ______ yet.",
+			"options":[
+				{"value":"has been arrested","right":true,"selected":false},
+				{"value":"was arrested","right":false,"selected":false},
+				{"value":"is arrested","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"Spam is a nightmare. ______ hundreds of useless messages yesterday.",
+			"options":[
+				{"value":"Someone me sent","right":false,"selected":false},
+				{"value":"I was sent","right":true,"selected":false},
+				{"value":"I am sent","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"The snowstorm continues and thousands of flights ______ already today.",
+			"options":[
+				{"value":"have been cancelled","right":true,"selected":false},
+				{"value":"has been cancelled","right":false,"selected":false},
+				{"value":"cancelled","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"I mustn't forget to go to the ______ to collect Tom's birthday cake.",
+			"options":[
+				{"value":"dry cleaner's","right":false,"selected":false},
+				{"value":"baker's","right":true,"selected":false},
+				{"value":"butcher's","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"This bill ______ before you can make another order.",
+			"options":[
+				{"value":"must pay","right":false,"selected":false},
+				{"value":"must be pay","right":false,"selected":false},
+				{"value":"must be paid","right":true,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"I couldn't find the office because I ______ the wrong address.",
+			"options":[
+				{"value":"am given","right":false,"selected":false},
+				{"value":"was given","right":true,"selected":false},
+				{"value":"has been given","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"I wouldn't leave the car there or you'll get a ______ ticket.",
+			"options":[
+				{"value":"parking","right":true,"selected":false},
+				{"value":"return","right":false,"selected":false},
+				{"value":"single","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"I don't buy CDs. Most of my music collection ______ from the Internet.",
+			"options":[
+				{"value":"has been downloaded","right":true,"selected":false},
+				{"value":"has downloaded","right":false,"selected":false},
+				{"value":"will be downloaded","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Where in the world ______?' 'In South Africa.'",
+			"options":[
+				{"value":"is spoken Afrikaans","right":false,"selected":false},
+				{"value":"speak Afrikaan","right":false,"selected":false},
+				{"value":"is Afrikaans spoken","right":true,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"Very little coffee ______ in this country. We import a lot from abroad.",
+			"options":[
+				{"value":"was grown","right":false,"selected":false},
+				{"value":"is grown","right":true,"selected":false},
+				{"value":"are grown","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"My techno hero was Steve Jobs, the man who ______ Apple with Steve Wozniak.",
+			"options":[
+				{"value":"founded","right":true,"selected":false},
+				{"value":"was founded","right":false,"selected":false},
+				{"value":"is founded","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"Thousands of trees have been blown down across the country ______ strong winds.",
+			"options":[
+				{"value":"from","right":false,"selected":false},
+				{"value":"by","right":true,"selected":false},
+				{"value":"with","right":false,"selected":false},
+			],"selected":""},
+		
+		
+
+		
+			{"type":"radio","question":"We haven't received your letter yet. The ______ doesn't come until midday.",
+			"options":[
+				{"value":"fireman","right":false,"selected":false},
+				{"value":"postman","right":true,"selected":false},
+				{"value":"businessman","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Do you think that teachers ______ by robots one day?' 'I hope not!'",
+			"options":[
+				{"value":"will be replaced","right":true,"selected":false},
+				{"value":"are replaced","right":false,"selected":false},
+				{"value":"have been replaced","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'When ______?' 'In the 1950s, I think.'",
+			"options":[
+				{"value":"was the credit card invented","right":true,"selected":false},
+				{"value":"the credit card was invented","right":false,"selected":false},
+				{"value":"is the credit card invented","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Who ______ you those flowers?' 'I don't know. I have a secret admirer!'",
+			"options":[
+				{"value":"was sent","right":false,"selected":false},
+				{"value":"send","right":false,"selected":false},
+				{"value":"sent","right":true,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'Are you listening to me?' 'Sorry I had my ______ in. What did you say?'",
+			"options":[
+				{"value":"headphones","right":true,"selected":false},
+				{"value":"headlights","right":false,"selected":false},
+				{"value":"headache","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"A local architect ______ our house to be very eco-friendly.",
+			"options":[
+				{"value":"is designed","right":false,"selected":false},
+				{"value":"designed","right":true,"selected":false},
+				{"value":"was designed","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"We haven't been in a ______ for years. We book all our holidays online.",
+			"options":[
+				{"value":"travel agent","right":false,"selected":false},
+				{"value":"travel agent's","right":true,"selected":false},
+				{"value":"travel agents","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"It took a while to get my PC working after it ______ a virus.",
+			"options":[
+				{"value":"was infected from","right":false,"selected":false},
+				{"value":"was infected by","right":true,"selected":false},
+				{"value":"infected by","right":false,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"'The best wine is made in Italy.' '______ It's made in Spain!'",
+			"options":[
+				{"value":"No, it doesn't!","right":false,"selected":false},
+				{"value":"No, it wasn't!","right":false,"selected":false},
+				{"value":"No, it isn't!","right":true,"selected":false},
+			],"selected":""},
+		
+		
+			{"type":"radio","question":"The ______ was broken into last week. All the expensive watches were stolen.",
+			"options":[
+				{"value":"chemist's","right":false,"selected":false},
+				{"value":"jeweller's","right":true,"selected":false},
+				{"value":"butcher's","right":false,"selected":false},
+			],"selected":""},
+		
+
+
+
+
+
+
+
+];
+
+
+
+var quiz = new Quiz({		quizQuestions: data,elementId: 'quiz_container',showAnswersBtn:true,showResetBtn:true});
+</script>
+  </body>
+</html>

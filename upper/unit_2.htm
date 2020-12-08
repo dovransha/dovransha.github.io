@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 18 Oct 2020 18:53:22 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<style>
+.question-container{max-width:1024px;background:orange;margin:0 auto;border-radius:8px;width:100%;font-size:30px}.question-container .inner-container{padding:30px}.question-container .question_number{color:#000;text-align:center}.question-container .question_name{margin-top:30px}.question-container .options{margin-top:30px}.question-container .option{margin-bottom:3px;background:#FFF;padding:10px;border-radius:3px}.question-container .enabled .option{cursor:pointer}.question-container .enabled .option:hover{background:#25a186;color:#FFF}.question-container .disabled .correct .right{color:green;animation:correctAnim 0.5s 0s 2 both;animation-direction:alternate;transform:scale(2)}.question-container .option span{display:none;float:right}.question-container .disabled .correct .right,.question-container .disabled .incorrect .wrong{display:inline-block}@keyframes correctAnim{0%{color:green;transform:scale(2)}100%{color:green;transform:scale(5)}}.question-container .disabled .incorrect .wrong{color:red;transform:scale(1.5)}.question-container input[type='button']{background:#25a186;color:#FFF;cursor:pointer;padding:10px 40px;margin:20px;border:0;font-size:20px;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}.question-container input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}.question-container .next input[type='button']{margin-top:30px}.question-container .enabled .next input[type='button']{background:gray;color:#d5d5d5;-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1);cursor:default}.question-container .disabled .next input[type='button']{background:#25a186;color:#FFF;cursor:pointer;-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);animation:enableBtnAnim 0.5s 0s infinite both;animation-direction:alternate}@keyframes enableBtnAnim{0%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}100%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}}.question-container .disabled .next input[type='button']:hover{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);animation:hoverBtnAnim 0.5s 0s 1 both;animation-direction:alternate}@keyframes hoverBtnAnim{0%{-webkit-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow:16px 17px 18px -7px rgba(18,1,18,0.61);transform:scale(1.1)}100%{-webkit-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);-moz-box-shadow:0 0 0 -7px rgba(18,1,18,0.61);box-shadow:0 0 0 -7px rgba(18,1,18,0.61);transform:scale(1)}}.question-container .showAll{margin-bottom:40px;border:1px solid gray;padding:25px;border-radius:4px;display:block!important}@media only screen and (max-width : 600px){.question-container .next input[type='button']{width:100%;margin:0;margin-top:20px}}</style>
+<div id='quiz_container'></div>
+<script>
+
+var _0x30e8=['INPUT','setAttribute','inner-container','createElement','\x20correct','90%','style','question\x20disabled\x20showAll','option\x20option','call','center','getElementById','question\x20disabled','questionContainer','nextBtn','\x20of\x20','srcElement','</div><br/><div>','className','question\x20enabled','<div><div><b>Result:</b></div><br/><div>','   \     \    \     \        \      \    \     \ <a\ target=\'_blank\'\ href=\'https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\'>\     \          </a>','object','remove','parentElement','Show\x20Answers','indexOf','div','showAnswersBtn','hasOwnProperty','lastChild','right','getElementsByClassName','question_name','score','enabled','Quiz','<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>','showResetBtn','next','quiz-report','options','myLink','currentQuestion','value','question','bind','Try\x20Again','button','event','option','appendChild','target','elementId','none','textAlign','addEventListener','quizQuestions','innerHTML','block','innerContainer','question_number','length','display','type','click'];(function(_0x286d19,_0x30e82a){var _0x9e26e6=function(_0x15fa70){while(--_0x15fa70){_0x286d19['push'](_0x286d19['shift']());}};_0x9e26e6(++_0x30e82a);}(_0x30e8,0x10d));var _0x9e26=function(_0x286d19,_0x30e82a){_0x286d19=_0x286d19-0x0;var _0x9e26e6=_0x30e8[_0x286d19];return _0x9e26e6;};(function(){function _0x199599(){var _0x3b4b83=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this['questionContainer']=document['createElement'](_0x9e26('0x16')),this['questionContainer'][_0x9e26('0xd')]='question-container',this[_0x9e26('0x37')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x37')][_0x9e26('0xd')]=_0x9e26('0x3f'),_0x3b4b83['appendChild'](this[_0x9e26('0x8')]),this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);for(var _0x535939=0x0;_0x535939<this[_0x9e26('0x24')][_0x9e26('0x34')]['length'];_0x535939++){var _0x3dd27d=document['createElement']('div');_0x3dd27d[_0x9e26('0xd')]=_0x9e26('0xe'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d),_0x535939!=this[_0x9e26('0x26')]&&(_0x3dd27d['style'][_0x9e26('0x3a')]=_0x9e26('0x31'));var _0x81142=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x81142[_0x9e26('0xd')]=_0x9e26('0x38'),_0x81142[_0x9e26('0x35')]=_0x535939+0x1+'/'+this['options'][_0x9e26('0x34')][_0x9e26('0x39')],_0x3dd27d[_0x9e26('0x2e')](_0x81142);var _0x13c728=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x13c728['className']=_0x9e26('0x1c'),_0x13c728['innerHTML']=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x28')],_0x3dd27d[_0x9e26('0x2e')](_0x13c728);var _0x4722a4=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4722a4[_0x9e26('0xd')]=_0x9e26('0x24'),_0x3dd27d[_0x9e26('0x2e')](_0x4722a4);for(var _0x28c409=0x0;_0x28c409<this['options']['quizQuestions'][_0x535939]['options'][_0x9e26('0x39')];_0x28c409++){var _0x4cca80=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4cca80[_0x9e26('0xd')]='option\x20option'+_0x535939+_0x28c409,_0x4cca80[_0x9e26('0x35')]=this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][_0x28c409][_0x9e26('0x27')]+_0x9e26('0x20'),_0x4722a4[_0x9e26('0x2e')](_0x4cca80),_0x4cca80[_0x9e26('0x33')]('click',_0x14c511['bind'](this,_0x535939,_0x28c409));}var _0x4ca056=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4ca056[_0x9e26('0xd')]=_0x9e26('0x22');var _0x4cc6a7=document[_0x9e26('0x40')]('INPUT');_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x27'),'Next'),_0x4cc6a7[_0x9e26('0xd')]=_0x9e26('0x9'),_0x4ca056[_0x9e26('0x2e')](_0x4cc6a7),_0x3dd27d[_0x9e26('0x2e')](_0x4ca056),_0x4cc6a7[_0x9e26('0x33')](_0x9e26('0x3c'),_0x55841d[_0x9e26('0x29')](this));}var _0x4b290c=document[_0x9e26('0x40')](_0x9e26('0x16'));_0x4b290c['id']=_0x9e26('0x23'),_0x4b290c['style'][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c),function(){var _0x4244cc=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);this[_0x9e26('0x25')]=document[_0x9e26('0x40')](_0x9e26('0x16')),this[_0x9e26('0x25')]['style']['fontSize']=_0x9e26('0x0'),this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')]=_0x9e26('0x5'),this[_0x9e26('0x25')][_0x9e26('0x35')]=_0x9e26('0x10'),_0x4244cc[_0x9e26('0x2e')](this[_0x9e26('0x25')]);}[_0x9e26('0x4')](this),function(){var _0x22373e=document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]<=0xbe&&0xb4<=_0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')]||_0x22373e[_0x9e26('0x12')]();}[_0x9e26('0x4')](this);}function _0x14c511(_0x364928,_0x1925ff){var _0x1c0550=_0x1c0550||window[_0x9e26('0x2c')];if(-0x1!=(_0x1c0550[_0x9e26('0x2f')]||_0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26('0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))){for(var _0x13e903=document['getElementsByClassName'](_0x9e26('0x28')),_0x17a407=0x0;_0x17a407<_0x13e903[_0x9e26('0x39')];_0x17a407++)_0x17a407==_0x364928&&(_0x13e903[_0x364928][_0x9e26('0xd')]=_0x9e26('0x7'));for(_0x17a407=0x0;_0x17a407<this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x9e26('0x39')];_0x17a407++){if(_0x17a407==_0x1925ff)if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26('0x1a')])(_0x13e903=document['getElementsByClassName']('option'+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+_0x9e26('0x41'),this[_0x9e26('0x1d')]++;else(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x1925ff))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x1925ff+'\x20incorrect';else if(this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][_0x9e26('0x1a')])(_0x13e903=document[_0x9e26('0x1b')](_0x9e26('0x2d')+_0x364928+_0x17a407))[0x0][_0x9e26('0xd')]=_0x9e26('0x3')+_0x364928+_0x17a407+_0x9e26('0x41');}}}function _0x55841d(){var _0x44e42a=_0x44e42a||window[_0x9e26('0x2c')];if(-0x1!=(_0x44e42a[_0x9e26('0x2f')]||_0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26('0x13')]['className']['indexOf']('disabled')){this[_0x9e26('0x26')]++;for(var _0x4023e4=document['getElementsByClassName'](_0x9e26('0x28')),_0x3c6c2a=0x0;_0x3c6c2a<_0x4023e4[_0x9e26('0x39')];_0x3c6c2a++)_0x3c6c2a==this['currentQuestion']?_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'):_0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')]='none';this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')]==this[_0x9e26('0x26')]&&function(){var _0x522412=document[_0x9e26('0x6')](_0x9e26('0x23'));if(_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36'),_0x522412[_0x9e26('0x35')]=_0x9e26('0xf')+this[_0x9e26('0x1d')]+_0x9e26('0xa')+this['options'][_0x9e26('0x34')][_0x9e26('0x39')]+_0x9e26('0xc')+parseInt(this[_0x9e26('0x1d')]/this['options'][_0x9e26('0x34')][_0x9e26('0x39')]*0x64)+'%</div></div>',this[_0x9e26('0x24')][_0x9e26('0x17')]){var _0x2ea20c=document[_0x9e26('0x40')]('INPUT');_0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2ea20c[_0x9e26('0x3e')]('value',_0x9e26('0x14')),_0x522412[_0x9e26('0x2e')](_0x2ea20c),_0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'),function(){for(var _0x3afb67=document[_0x9e26('0x1b')]('question'),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0xd')]=_0x9e26('0x2');for(_0x3afb67=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0xbc6abe=0x0;_0xbc6abe<_0x3afb67[_0x9e26('0x39')];_0xbc6abe++)_0x3afb67[_0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31');}['bind'](this));}if(this[_0x9e26('0x24')][_0x9e26('0x21')]){var _0x2fbad3=document[_0x9e26('0x40')](_0x9e26('0x3d'));_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'),_0x9e26('0x2b')),_0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x27'),_0x9e26('0x2a')),_0x522412['appendChild'](_0x2fbad3),_0x2fbad3[_0x9e26('0x33')]('click',function(){for(var _0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x28')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a['length'];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0xd')]=_0x9e26('0xe'),_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]='none',0x0==_0x345f4a&&(_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display']=_0x9e26('0x36'));for(_0x3d8c0a=document[_0x9e26('0x1b')](_0x9e26('0x22')),_0x345f4a=0x0;_0x345f4a<_0x3d8c0a[_0x9e26('0x39')];_0x345f4a++)_0x3d8c0a[_0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x36');this[_0x9e26('0x26')]=0x0,this[_0x9e26('0x1d')]=0x0,document[_0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26('0x3a')]=_0x9e26('0x31'),document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')]='',_0x199599[_0x9e26('0x4')](this);}[_0x9e26('0x29')](this));}}[_0x9e26('0x4')](this);}}this[_0x9e26('0x1f')]=function(){this['score']=0x0;arguments[this['currentQuestion']=0x0]&&_0x9e26('0x11')==typeof arguments[0x0]&&(this[_0x9e26('0x24')]=function(_0x427faf,_0x1c6308){var _0x3daaf6;for(_0x3daaf6 in _0x1c6308)_0x1c6308[_0x9e26('0x18')](_0x3daaf6)&&(_0x427faf[_0x3daaf6]=_0x1c6308[_0x3daaf6]);return _0x427faf;}({'quizQuestions':{},'elementId':'','showAnswersBtn':!0x0,'showTimer':!0x0},arguments[0x0])),_0x199599[_0x9e26('0x4')](this);};}());
+
+
+var data = 
+
+
+[
+
+
+
+
+	
+	
+
+{"type":"radio","question":"I think we’re going the wrong way. We need to drive ______ the station to find a car park.", 
+"options":[
+{"value":"towards","right":true,"selected":false},
+{"value":"across","right":false,"selected":false},
+{"value":"along","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"‘What’s Dan up to?’ ‘He left his job two months ago and ______ round the US ever since.’",
+"options":[
+{"value":"was travelling","right":false,"selected":false},
+{"value":"’s travelled","right":false,"selected":false},
+{"value":"has been travelling","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"We nearly missed the train when they changed the ______ number at the last minute.",
+"options":[
+{"value":"carriage","right":false,"selected":false},
+{"value":"platform","right":true,"selected":false},
+{"value":"timetable","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"Thanks so much for having us over for dinner last week. We ______ it.",
+"options":[
+{"value":"’ve really been enjoying","right":false,"selected":false},
+{"value":"’ve really enjoyed","right":false,"selected":false},
+{"value":"really enjoyed","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"According to the latest figures, thousands of new jobs ______ in manufacturing.", 
+"options":[
+{"value":"have been created","right":true,"selected":false},
+{"value":"has been created","right":false,"selected":false},
+{"value":"have created","right":false,"selected":false},
+],"selected":""},
+ 
+
+
+ 
+
+{"type":"radio","question":"‘I said hello, but she walked straight ______ me.’ ‘Maybe she just didn’t see you.’",
+"options":[
+{"value":"through","right":false,"selected":false},
+{"value":"past","right":true,"selected":false},
+{"value":"over","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"You should try a city tour. You can hop on and ______ the bus at different places of interest.", 
+"options":[
+{"value":"off","right":true,"selected":false},
+{"value":"out of","right":false,"selected":false},
+{"value":"up","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"My friend has put some of her old clothes on eBay. She ______ about nine items already.",
+"options":[
+{"value":"’s been sold","right":false,"selected":false},
+{"value":"’s been selling","right":false,"selected":false},
+{"value":"’s sold","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"‘How long will it take to get ______ town during rush hour?’ ‘At least half an hour.’",
+"options":[
+{"value":"onto","right":false,"selected":false},
+{"value":"into","right":true,"selected":false},
+{"value":"in","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"Passengers in rows 1–15 are requested to ______ the plane now.",
+"options":[
+{"value":"take off","right":false,"selected":false},
+{"value":"get into","right":false,"selected":false},
+{"value":"board","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"I don’t think I want to finish this sandwich. It ______ a bit odd to me.", "options":[
+{"value":"tastes","right":true,"selected":false},
+{"value":"is tasting","right":false,"selected":false},
+{"value":"has been tasting","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"My father was burgled last year, so we ______ on his flat to give him peace of mind.",
+"options":[
+{"value":"have an alarm was fitted","right":false,"selected":false},
+{"value":"was an alarm fitted","right":false,"selected":false},
+{"value":"had an alarm fitted","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"We can’t start building our extension, because the plans ______ yet.",
+"options":[
+{"value":"haven’t approved","right":false,"selected":false},
+{"value":"haven’t been approved","right":true,"selected":false},
+{"value":"hasn’t been approved","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"You take the window seat if you like. I’ll be fine next to the ______.",
+"options":[
+{"value":"deck","right":false,"selected":false},
+{"value":"port","right":false,"selected":false},
+{"value":"aisle","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"‘How’s your son getting on at university?’ ‘Fine, I think, but he ______ us for days.’", "options":[
+{"value":"hasn’t contacted","right":true,"selected":false},
+{"value":"didn’t contact","right":false,"selected":false},
+{"value":"hasn’t been contacting","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"Make sure you don’t ______ the 11.30 p.m. train. There won’t be another one until 5 a.m.",
+"options":[
+{"value":"ride","right":false,"selected":false},
+{"value":"catch","right":false,"selected":false},
+{"value":"miss","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"We’ve just done a cycle tour. I hadn’t ______ a bike for years, but I quite enjoyed it.", 
+"options":[
+{"value":"ridden","right":true,"selected":false},
+{"value":"driven","right":false,"selected":false},
+{"value":"boarded","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"‘Where on earth are you?’ ‘Sorry, I’m not going to make the meeting. My flight ______!’",
+"options":[
+{"value":"has just cancelled","right":false,"selected":false},
+{"value":"is just been cancelled","right":false,"selected":false},
+{"value":"has just been cancelled","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"You’ll need to follow the signs for the diversion, because the main road ______.",
+"options":[
+{"value":"is repaired","right":false,"selected":false},
+{"value":"is being repaired","right":true,"selected":false},
+{"value":"is repairing","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"During the Olympics, the police set up ______ on key routes around the city.",
+"options":[
+{"value":"traffic wardens","right":false,"selected":false},
+{"value":"ticket inspectors","right":false,"selected":false},
+{"value":"security checks","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"I love shopping in town, but my sister buys online and ______ to her house.", 
+"options":[
+],"selected":""},
+ 
+
+{"type":"radio","question":"Reports are of a multi-vehicle crash, but luckily no one ______ or seriously injured.",
+"options":[
+{"value":"are been killed","right":false,"selected":false},
+{"value":"has been killed","right":true,"selected":false},
+{"value":"hasn’t been killed","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"The crossing was so rough that I couldn’t wait to ______ the ferry onto dry land.", 
+"options":[
+{"value":"get off","right":true,"selected":false},
+{"value":"get on","right":false,"selected":false},
+{"value":"get out of","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"Mum ______ at the moment. I don’t know why, it looked fine to me as it was.",
+"options":[
+{"value":"is making the garden redesigned","right":false,"selected":false},
+{"value":"is having redesigned the garden","right":false,"selected":false},
+{"value":"is having the garden redesigned","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"‘Shall I get a ______?’ ‘No, don’t bother. We’ve only got one small bag each.’", 
+"options":[
+{"value":"trolley","right":true,"selected":false},
+{"value":"cabin","right":false,"selected":false},
+{"value":"port","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"The best way of spending a winter’s evening is sitting next to a ______ fire.", 
+"options":[
+{"value":"crackling","right":true,"selected":false},
+{"value":"cracking","right":false,"selected":false},
+{"value":"crunching","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"Have you heard? The prime minister ______ into hospital. He needs an emergency operation.",
+"options":[
+{"value":"has just taken","right":false,"selected":false},
+{"value":"has just been taken","right":true,"selected":false},
+{"value":"have just been taken","right":false,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"______ to emails all morning and I'm still only halfway through my inbox!",
+"options":[
+{"value":"I replied","right":false,"selected":false},
+{"value":"I've replied","right":false,"selected":false},
+{"value":"I've been replying","right":true,"selected":false},
+],"selected":""},
+ 
+
+{"type":"radio","question":"We might lose the mobile signal in a second. We’re about to go into a ______.",
+"options":[
+{"value":"track","right":false,"selected":false},
+{"value":"tunnel","right":true,"selected":false},
+{"value":"runway","right":false,"selected":false},
+],"selected":""},
+ 
+
+
+
+
+
+
+
+
+];
+
+
+
+var quiz = new Quiz({		quizQuestions: data,elementId: 'quiz_container',showAnswersBtn:true,showResetBtn:true});
+</script>
+  </body>
+</html>
